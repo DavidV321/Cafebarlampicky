@@ -1,0 +1,339 @@
+@media only screen and (max-width: 1160px){
+
+}
+/* ........catering.........*/
+    
+    .we-are-three {
+        margin-top: 300px;
+    }
+    /*
+    .segment-one.col.span-1-of-3 {
+        width: 51%;
+     
+    }
+    
+   .segment-one.col.span-1-of-3:nth-child(1) { 
+       margin-left: 21px;
+    }
+    */
+    
+    
+
+
+@media only screen and (max-width: 1220px){
+
+    /*......mobile navigation.........*/
+   
+    nav ul li {
+        display: block;
+        text-align: center; 
+        padding-bottom: 10px;
+       
+      
+    }    
+    
+    
+    .mobile-nav-back {
+        height: 340px;
+        position: fixed;
+        width: 100%;
+        background-color: rgba(0,0,0,0.9);
+        border-bottom: 2px solid white;
+        display: none;
+        z-index: 100;
+
+    }
+    
+    .mobile-nav-icon {
+        display: inline-block;
+        z-index: 200;
+        position: fixed;
+        top: 4%;
+        left: 93%;
+    }
+    
+    nav ul {
+        display: none;
+        position: fixed;
+        left: 50%;
+        top: 27%;
+        transform: translate(-50%,-50%);
+        z-index: 200;
+        
+    }
+
+    .facebook img {
+        display: none;
+    }
+
+    .instagram img {
+        display: none;
+    }
+
+}
+    
+    
+/* nav ul li a:hover,
+nav ul li a:active {
+    transition: border-top 0.7s;
+    border-top: 2px solid transparent;
+    color: #91AA99;
+      
+}
+     */
+
+
+    
+   
+    
+ 
+@media only screen and (max-width: 1090px){
+
+    /*......dinner and drink.........*/
+   
+
+.dinner-item {
+ 
+    width: 100%;
+}
+
+    .dinner-price {
+        text-align: left;
+        margin-left: 59px;
+          
+    }
+
+    #beer-breznak-main {
+        display: none;
+    }
+
+
+    
+    }
+
+    
+@media only screen and (max-width: 1000px){
+
+    #flexbox-two {
+       display: block; 
+        
+    }
+    
+    .social-media {
+        padding-left: 80px;
+    }
+    
+    .maps {
+        padding-left: 80px;
+    }
+
+
+      
+}
+  
+    
+@media only screen and (max-width: 980px){
+
+    .segment-two.col.span-1-of-3 {
+        width: 51%;
+      
+    }
+  
+  .segment-three.col.span-1-of-3 {
+        width: 51%;
+        
+    }
+    
+    
+    .we-are-three {
+        margin-top: 700px;
+    }
+    
+    
+    /*.............instagram...............*/
+    
+    .container-gallery {
+        display: none;
+    }
+    
+    /*............firemky............*/
+    
+    #firemky-img {
+        display: none;
+    }
+    
+    .firemky-item {
+        padding-left: 10%;
+        padding-bottom: 60px; 
+    }    
+    }
+ 
+      
+@media only screen and (max-width: 950px){
+    
+    /*.........théma........*/
+    
+    
+.thema-img img {
+    max-width: 700px;
+
+   
+    }
+
+    .segment-one.col.span-1-of-3 {
+        width: 51%;
+     
+    }
+
+    .catering-segments {
+        margin-left: 150px;
+    }
+    
+}
+       
+@media only screen and (max-width: 930px){
+
+    }
+
+
+         
+@media only screen and (max-width: 920px){
+
+    /*-------header.........*/
+    
+    .header-text h1 {
+        text-align: center;
+       
+    }
+      
+    .btn {
+        display: block;
+        text-align: center;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+.btn-full:link,
+.btn-full:visited {
+   margin-left: 40px;
+    
+}
+
+
+.we-are-three {
+    margin-top: 800px;
+}
+
+    }
+
+       
+    
+@media only screen and (max-width: 760px){
+  
+    .we-are-three {
+        margin-top: 1000px;
+    }
+      
+.thema-img img {
+    max-width: 500px;
+    
+    
+    }
+    
+    
+#thema-main h1 {
+    font-size: 30px;
+   
+    
+}
+    #thema-main p {
+      font-size: 15px;  
+    }
+  
+    #photo-gallery li {
+        width: 100%;  
+  }
+
+ 
+      
+}
+          
+@media only screen and (max-width: 700px){
+  
+    /*..........dinner/drink/.........*/
+
+    .dinner-text {
+        margin-left: 30px;
+    }
+ #thema-main p {
+      font-size: 13px; 
+     padding-left: 40px;
+     padding-right: 10px;
+    }
+
+    .we-are-three {
+        margin-top: 1100px;
+    }
+    }
+        
+@media only screen and (max-width: 610px){
+  
+    .we-are-three {
+        margin-top: 1500px;
+    }
+   
+.thema-img img {
+    max-width: 400px;
+    padding-left: 30px;
+        
+    }
+    
+    }
+
+          
+@media only screen and (max-width: 440px){
+  
+    .we-are-three {
+        margin-top: 1700px;
+    }
+
+    .catering-segments {
+        margin-left: 120px;
+    }
+}
+         
+@media only screen and (max-width: 390px){
+
+     .segment-one.col.span-1-of-3 {
+        width: 100%;
+        margin-left: 15px;
+        margin-right: 150px;
+     
+    }
+    
+    .segment-two.col.span-1-of-3 {
+        width: 100%;
+        margin-left: 15px;
+        margin-right: 150px;
+      
+    }
+  
+  .segment-three.col.span-1-of-3 {
+        width: 100%;
+         margin-left: 15px;
+        margin-right: 150px;
+        
+    }
+    
+    
+ .photo-segment .col {
+        margin-left: 0;
+        
+    }
+  
+        
+  .we-are-three {
+    margin-top: 800px;
+}
+
+}

@@ -1,0 +1,1309 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*......reusable........*/
+.row {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+
+/*.........header........*/
+
+header {
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("images/hlavnifoto.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    
+    
+    }
+
+.nav-backround {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0,0,0,1);
+    z-index: 50;
+  
+}
+
+/*........logo a social media...*/
+
+#logo img {
+    width: 60px;
+    position: fixed;
+    top: 0%;
+    left: 5%;
+    z-index: 100;
+  
+}
+
+
+.facebook img {
+    width: 21px;
+    position: fixed;
+    top: 3.5%;
+    left: 97%;
+    z-index: 100;
+}
+
+.instagram img {
+    width: 20px;
+    position: fixed;
+    top: 3.5%;
+    left: 94.5%;
+    z-index: 100;
+    
+}
+
+/* ...... navigace - menu.....*/
+
+nav ul {
+    position: fixed;
+    top: 3%;
+    left: 28%;
+    z-index: 100;
+    
+    
+}
+
+nav ul li {
+    display: inline-block;
+    color: white;
+    margin-left: 20px;
+    border-top: 2px solid transparent;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    border-top: 2px solid transparent;
+    z-index: 100;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    border-top: 2px solid white;
+    transition: border-top 0.7s;
+    color: #91AA99;
+    z-index: 100;
+      
+}
+
+nav a img {
+    width: 27px;
+   
+ 
+}
+
+
+/*..........mobile navigation.......*/
+
+.mobile-nav-icon {
+    position: absolute;
+    top: 2%;
+    left: 94.5%;
+    display: none;
+    
+}
+
+/*..........úvodní/hlavní nadpis......*/
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.header-text h1 {
+    color: white;
+    font-size: 35px;
+    font-family: "GT-Pressura", Sans-serif;
+    text-transform: uppercase;
+    word-spacing: 10px;
+    letter-spacing: 1.5px;
+}
+
+/*.......tlačítko firemka......*/
+
+.btn {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "GT-Pressura", Sans-serif;
+    border: 1px solid #613126;
+    border-radius: 3px;
+    margin-top: 10px;
+    padding: 7px 25px;
+    letter-spacing: 1px;
+  
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background: #000C69;
+    margin-left: 142px;
+    
+}
+
+.btn-full:hover,
+.btn-full:active {
+    transition: background 0.5s;
+    background: #006963;
+    border: 1px solid #3D1C14;
+}
+
+
+
+/*...........about us...........*/
+/* upravuji h2 s tím, že chci čáru pod tím nadpisem*/
+
+.about-main {
+    text-align: center;
+    margin: 50px auto;
+}
+
+
+
+.about-main h2 {
+    
+    margin-top: 55px;
+    font-size: 40px;
+    font-family: "GT-Pressura", Sans-serif;
+    padding-top: 25px;
+}
+
+
+.about-main h2:after {
+    content: "";
+    display: block;
+    width: 150px;
+    border-bottom: 2px solid #613126;
+    margin: 20px auto;
+}
+
+/*........rezervace.........*/
+
+
+
+
+.rezervace {
+    font-size: 23px;
+    font-family: "GT-Pressura", Sans-serif;
+    margin-bottom: 15px;
+    padding-bottom: 25px;
+}
+
+
+
+
+
+.btn14 {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    font-family: "GT-Pressura", Sans-serif;
+    border: 1px solid #613126;
+    border-radius: 1px;
+    margin-top: 10px;
+    padding: 10px 25px;
+    letter-spacing: 1px;
+  
+}
+
+.btn14-full:link,
+.btn14-full:visited {
+    background: #323232;
+  
+    
+}s
+
+.btn14-full:hover,
+.btn14-full:active {
+    transition: background 0.5s;
+    background: #A09898;
+    color: black;
+    font-weight: bold;
+     border: 1px solid #3D1C14;
+}
+
+
+/*.........plno chutí...........*/
+
+
+.plno-chuti-jarov {
+  text-align: center;
+  color: white;
+  padding-top: 200px;
+  font-size: 35px;
+  font-family: "GT-Pressura", Sans-serif;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3)),url("photogalery/14.2.jpg");
+    background-size: cover;
+    height: 100vh; 
+}
+
+
+.plno-chuti-main h1:after {
+    content: "";
+    display: block;
+    width: 60px;
+    border-bottom: 2px solid white;
+    margin: 25px auto;
+    
+}
+
+.btn1 {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "GT-Pressura", Sans-serif;
+    border: 1px solid white;
+    margin-top: 10px;
+    padding: 7px 5px;
+    letter-spacing: 1px;
+}
+
+.btn1-full:link,
+.btn1-full:visited {
+    background: white;
+    margin-left: 20px;
+}
+
+.btn1-full:hover,
+.btn1-full:active {
+    transition: background 0.2s;
+    background: #4F5151 ;
+    border: 1px solid #4F5151 ;
+}
+
+
+/*............PIVO BŘEZNAK.................*/
+
+#beer-breznak-main {
+  display: flex;
+  background: #011E37;
+  margin: 0px auto;
+
+}
+
+.slidephoto-main {
+
+flex: 1;
+}
+
+.pivo-tank-breznak {
+
+flex: 1;
+
+}
+
+
+
+
+    /*-------slidesphoto--------*/
+    
+    .slider {
+        width: 560px;
+        height: 560px;
+        overflow: hidden;
+        margin: 0px auto;
+      
+       
+}
+
+.slide img {
+   width: 100%;
+}
+
+.middle {
+  /* position: static;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+
+   */
+   margin-left: 10%;
+}
+
+
+.navigation {
+    position: relative;
+    top: -5%;
+    left: 70%;
+    transform: translatex(-50%);
+    display: flex;
+
+  
+    
+}
+
+.bar {
+    width: 50px;
+    height: 10px;
+    border: 2px solid white;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.bar:hover {
+    background: white;
+}
+
+input[name="r"]{
+    display: none;
+}
+
+.slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+
+.slide {
+    width: 20%;
+    transition: 0.8s;
+}
+
+#r1:checked ~ .s1 {
+    margin-left: 0;
+    
+}
+
+#r2:checked ~ .s1 {
+    margin-left: -20%;
+    
+}
+
+
+#r3:checked ~ .s1 {
+    margin-left: -40%;
+    
+}
+
+#r4:checked ~ .s1 {
+    margin-left: -60%;
+    
+}
+
+#r5:checked ~ .s1 {
+    margin-left: -80%;
+    
+}
+
+
+
+.pivo-tank-breznak {
+   
+    padding-top: 50px;
+}
+
+.pivo-tank-breznak h2 {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    font-family: "GT-Pressura", Sans-serif;
+    padding-bottom: 50px;
+  
+}
+
+
+
+.pivo-tank-breznak h2:after {
+    content: "";
+    display: block;
+    width: 250px;
+    border-bottom: 2px solid white;
+    margin: 15px auto;
+    
+}
+
+
+.pivo-tank-breznak h3 {
+    color: white;
+    font-size: 28px;
+    padding-bottom: 25px;
+    font-family: "GT-Pressura", Sans-serif;
+}
+
+.pivo-tank-breznak p {
+    font-size: 23px;
+    text-align: justify;
+    font-weight: bold;
+    padding-right: 50px; 
+
+}
+
+
+.btn2 {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "GT-Pressura", Sans-serif;
+    border: 1px solid #196F3D;
+    margin-top: 10px;
+    padding: 10px 40px;
+    letter-spacing: 1px;
+}
+
+.btn2-full:link,
+.btn2-full:visited {
+    background: #196F3D;
+    margin-left: 20px;
+}
+
+.btn2-full:hover,
+.btn2-full:active {
+    transition: background 0.5s;
+    background: red;
+    border: 1px solid red;
+}
+
+.odkaz-pivo {
+    text-align: center;  
+    padding-top: 10px;
+    padding-bottom: 0px;
+  
+    
+}
+
+
+
+/*...............TÉMATICKÉ.........*/
+
+#thema {
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(images/tapeta2.jpg);
+    text-align: center; 
+    margin: 0px auto;
+}
+
+.thema-main h2 {
+    color: #bfbfbf;
+    padding: 55px 0px;
+    font-size: 50px;
+    font-family: "GT-Pressura", Sans-serif;
+    
+}
+
+.thema-img img {
+    max-width: 900px;
+    box-shadow: 12px 9px 4px black;
+   
+}
+
+.thema-main p {
+    color: #bfbfbf;
+    text-align:center;
+    padding: 40px 0px 80px 0px;
+    font-size: 25px;
+    font-family: "GT-Pressura", Sans-serif;
+}
+
+
+/*...............garden............*/
+
+.garden-main {
+  text-align: center;
+  color: white;
+  padding-top: 200px;
+  font-size: 25px;
+  font-family: "GT-Pressura", Sans-serif;
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("images/zahradka2.jpg");
+    background-size: cover;
+    height: 100vh;  
+}
+
+.garden-item p {
+    padding-top: 25px;
+}
+
+
+/*...............we-are..............*/
+
+.we-are {
+    text-align: center;
+    color: white;
+    background: #323232;
+    margin: 0px auto;
+    padding: 120px 0px;
+}
+
+.we-are h3 {
+    font-size: 25px;
+    font-family: "GT-Pressura", Sans-serif;
+   
+}
+
+.we-are-item-one {
+    padding-top: 15px;
+    font-size: 70px;
+    font-family: "GT-Pressura", Sans-serif;
+}
+
+.we-are-two h3 {
+    text-align: center;
+    font-size: 25px;
+    font-family: "GT-Pressura", Sans-serif;
+    padding-top: 35px;
+}
+
+.we-are-item-two {
+    text-align: center;
+    font-size: 20px;
+    font-family: "GT-Pressura", Sans-serif;
+    padding-top: 15px;
+}
+
+.odkazy2 img {
+    text-align: center;
+    width: 25px;
+    margin: 6px 9px 4px 9px;
+    
+}
+.btn3 {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "GT-Pressura", Sans-serif;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin-top: 10px;
+    padding: 7px 5px;
+    letter-spacing: 1px;
+}
+
+.btn3-full:link,
+.btn3-full:visited {
+    background: white;
+    margin-left: 20px;
+}
+
+.btn3-full:hover,
+.btn3-full:active {
+    transition: background 0.2s;
+    background: #4F5151 ;
+    border: 1px solid #4F5151 ;
+}
+
+/*.............instagram-main..........*/
+
+.instagram-main {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "GT-Pressura", Sans-serif;
+    margin: 0px auto;
+    padding-top: 55px;
+    
+}
+
+
+
+.btn4 {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: "GT-Pressura", Sans-serif;
+    border: 1px solid #323232;
+    border-radius: 5px;
+    background: #323232;
+    margin-top: 10px;
+    padding: 5px 15px;    
+    letter-spacing: 1px;
+}
+
+.odkaz-inst {
+    padding: 25px 0px 15px 0px;
+    
+}
+
+
+.container-gallery img {
+    width: 25%;
+    height: 25%;
+    opacity: 1;
+    
+   
+   
+}
+
+.container-gallery img:hover {
+    transition: transform 0.2s, opacity 0.2s;
+    height: 25%;
+    opacity: 0.4;
+     
+}
+
+.container-gallery {
+    padding-left: 220px;
+    padding-bottom: 50px;
+       
+}
+
+
+
+
+.btn5 {
+    display: inline;
+    position: relative;
+    top: -152px;
+    left: -10px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    background: #000;
+    padding-top: 155px;
+    
+    
+   
+}
+
+.btn6 {
+    display: inline;
+    text-decoration: none;
+    border: 1px solid transparent;
+    background: #000;
+    padding-top: 307px;  
+   
+}
+
+.btn7 {
+    display: inline;
+    position: relative;
+    top: -153px;
+    left: 10px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    background: #000;
+    padding-top: 154px;  
+   
+}
+
+
+.btn8 {
+    display: inline;
+    position: relative;
+    top: -142px;
+    left: -10px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    background: #000;
+    padding-top: 214px;  
+   
+}
+
+
+
+.btn9 {
+    display: inline;
+    position: relative;
+    top: -204px;
+    left: 245px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    background: #000;
+    padding-top: 154px;  
+   
+}
+
+
+.btn10 {
+    display: inline;
+    position: relative;
+    top: 13px;
+    left: -236px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    background: #000;
+    padding-top: 213px;  
+   
+}
+
+
+.btn11 {
+    display: inline;
+    position: relative;
+    top: -173px;
+    left: -10px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    background: #000;
+    padding-top: 154px;  
+   
+}
+
+.btn12 {
+    display: inline;
+    position: relative;
+    top: -191px;
+    left: 243px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    background: #000;
+    padding-top: 200px;  
+   
+}
+
+.item1 {
+    position: relative;
+    top: 4px;
+  }
+
+.item2 {
+    position: relative;
+    top: 4px;
+}
+   
+.item3 {
+    position: relative;
+    top: 4px;  
+}
+
+.item4 {
+    position: relative;
+    top: 4px;  
+}
+
+
+.item5 {
+    position: relative;
+    top: 4px;  
+}
+
+
+.item6 {
+    position: relative;
+    top: 4px;  
+}
+
+.item7 {
+    position: relative;
+    top: 4px;  
+}
+
+.item8 {
+    position: relative;
+    top: 4px;  
+}
+
+/*..............lunch.html.............*/
+
+.lunch {
+    margin: 0px auto;
+    padding: 150px 250px;
+}
+
+.lunch img {
+    width: 80%;
+    height: 80%;
+}
+
+.lunch-items {
+    text-align: center;
+    font-size: 25px;
+    font-family:  "GT-Pressura", Sans-serif; 
+}
+
+.odkaz-inst2 {
+    margin-left: 217px;
+    margin-bottom: 45px;
+}
+
+
+.btn13 {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: "GT-Pressura", Sans-serif;
+    border: 1px solid #323232;
+    border-radius: 5px;
+    background: #323232;
+    margin-top: 10px;
+    padding: 5px 15px;    
+    letter-spacing: 1px;
+}
+
+
+
+/*.............dinner.html.............*/
+
+
+.header-text2 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.header-text2 h1 {
+    color: white;
+    font-size: 55px;
+    font-family: "GT-Pressura", Sans-serif;
+    text-transform: uppercase;
+    word-spacing: 20px;
+    letter-spacing: 1.5px;
+}
+
+.header-text2:after {
+    content: "";
+    display: block;
+    width: 100px;
+    border-bottom: 2px solid white;
+    margin: 20px auto;
+    }
+
+.dinner-text {
+    margin: 40px 100px 60px 180px;
+    font-size: 20px;
+    font-family: "GT-Pressura", Sans-serif;
+    
+}
+
+.dinner-text h3 {
+    padding: 25px 0px 25px 60px;
+    font-family: "GT-Pressura", Sans-serif;
+    
+}
+    
+.dinner-menu ul li {
+    list-style-type: none;
+    padding-bottom: 20px;
+    padding-left: 60px;
+  
+}
+
+
+
+/*...........dinner menu.........*/
+
+.dinner-item {
+    font-family: "GT-Pressura", Sans-serif;
+    list-style-type: none;
+    float: left;
+    margin-bottom: 15px;
+    margin-left: 57px;
+}
+
+.dinner-price {
+   font-family: "GT-Pressura", Sans-serif;
+    list-style-type: none;
+    text-align: right;
+    margin-bottom: 15px;
+    margin-right: 65px;
+   
+}
+
+/*
+.clearfix {zoom}
+.clearfix: after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+*/
+/*...........Kontakty...........*/
+
+  
+.contacts {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url(images/tapeta2.jpg);
+    text-align: center
+    
+}
+
+.contact-item h4 {
+    color: black;
+  margin-bottom: 5px;
+  font-size: 20px;
+font-family: "GT-Pressura", Sans-serif;
+}
+
+.contact-item-p {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-family: "GT-Pressura", Sans-serif;
+    
+}
+
+.contact-item-provozovatel {
+    margin-top: 40px;
+    color: white;
+    font-size: 125%;
+    font-family: "GT-Pressura", Sans-serif;
+}
+
+.contact-item-adres {
+    color: white;
+    font-size: 20px;
+    font-family: "GT-Pressura", Sans-serif;
+}
+
+iframe {
+    width: 100%;
+   
+}
+
+/*.............catering..............*/
+
+
+
+.catering-item {
+    text-align: center;
+    font-size: 25px;
+    font-family: "Tungsten A", "Tungsten B", sans-serif;
+    font-weight: bold;
+    padding-top: 70px;
+    color: #393737; 
+
+}
+
+.catering-segments {
+    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.catering-segments img {
+    width: 130px;
+    float: left;
+    
+  
+}
+
+.catering-segments h3 {
+   /* float: right;   */
+    padding-right: 82px;
+    padding-top: 57px;
+}
+
+.catering-segments p {
+    text-align: justify;
+    font-size: 20px;
+    font-family: "GT-Pressura", Sans-serif;
+
+}
+
+
+
+/*...........catering-formulář.........*/
+
+.we-are-three {
+    text-align: center;
+    color: white;
+    background: #323232;
+    margin: 20px 0px 0px 0px;
+    padding: 70px 0px 0px 0px;
+}
+
+.we-are-three h3 {
+   width: auto;
+  font-size: 25px;
+   font-family: "GT-Pressura", Sans-serif;
+    padding-top: 60px;
+
+
+}
+
+.box {
+    width: 500px;
+    height: 1000px;
+   padding: 500px 40px 70px 40px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.box h1 {
+    margin-bottom: 15px;
+    padding-top: 50px;
+    font-size: 25px;
+    font-family: "GT-Pressura", Sans-serif;
+    
+}
+
+.box input[type="text"], .box input[type="email"], .box input[type="date"], textarea {
+    border: 1px solid white;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 15px 10px;
+    width: 400px;
+    color: #bbb;
+    font-size: 17px;
+    font-family: "GT-Pressura", Sans-serif;
+    outline: none;
+    
+}
+
+.box select {
+    border: 1px solid white;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 15px 10px;
+    width: 400px;
+    color: #bbb;
+    font-size: 17px;
+    font-family: "GT-Pressura", Sans-serif;
+    outline: none;
+}
+
+.box select:focus {
+    background: #B9B7B7;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "GT-Pressura", Sans-serif;
+    outline: none;
+    
+}
+
+.box input[type="text"]:focus, .box input[type="email"]:focus, .box input[type="date"]:focus, textarea:focus {
+    background: #B9B7B7;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.box input[type="submit"] {
+    background: none;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    padding: 15px 10px;
+    border: 2px solid white;
+    font-size: 17px;
+    cursor: pointer;
+    
+}
+
+.box input[type="submit"]:hover {
+    background:  #B9B7B7;
+    color: black;
+    font-weight: bold;
+    border: 2px solid #B9B7B7;
+
+}
+
+/*...........form result..........*/
+/*
+.form-result {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    
+}
+
+.success {
+     background-color: #b88331;
+    
+}
+
+.error {
+    background-color: #b88331;
+    
+}
+
+*/
+
+
+
+ /*........... gallery...............*/
+
+
+#photo-gallery {
+   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url(images/tapeta2.jpg);
+ 
+   
+}
+  
+
+.photo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.one-photo {
+    padding: 0 15px 20px;
+}
+
+.one-photo img {
+    width: 200px;
+    height: 150px;
+    transform: scale(1);
+    transition: all 0.5s linear;
+    
+}
+
+.one-photo img:hover {
+   
+    transform: scale(1.1);
+    transition: all 0.5s linear;
+
+    
+}
+
+
+
+/*................FIREMKY.............*/
+
+#flexbox {
+    display: flex;
+   /* max-width: 1400px;*/
+    margin: auto;
+
+}
+
+#flexbox div {
+    background: #565656;
+}
+
+#firemky-segment, #firemky-item {
+    flex: 2;
+}
+
+#firemky-img {
+    flex: 1;
+}
+
+#firemky-img img {
+    width: 450px;
+    padding-bottom: 15px;
+}
+    
+.firemky-text h2 {
+    color: white;
+    margin-top: 0px;
+    font-size: 35px;
+    font-family: "GT-Pressura", Sans-serif;
+    text-align: center;
+    padding-top: 70px;
+  
+}
+
+.firemky-text h2:before {
+    content: "";
+    display: block;
+    width: 150px;
+    border-top: 2px solid white;
+    margin-left: 45%;
+    padding-bottom: 30px;
+    
+}
+
+
+.firemky-item {
+    color: white;
+    padding-top: 40px;
+    padding-left: 20%;
+    font-size: 20px;
+    font-family: "GT-Pressura", Sans-serif;
+}
+
+.firemky-item li {
+    padding-bottom: 7px;
+}
+
+/*......firemky kontakt........*/
+
+.firemky-text-two h2 {
+    text-align: center;
+    color: #2c2b2b;
+    margin: 0px auto;
+    padding-top: 100px;
+    font-size: 30px;
+    font-family: "GT-Pressura", Sans-serif;
+        
+}
+
+.firemky-item-two {
+    text-align: center;
+    color: #39395A;
+    font-size: 65px;
+    font-family: "GT-Pressura", Sans-serif;
+    padding-top: 25px;
+}
+
+.firemky-item-three {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 100px;
+    font-family: "GT-Pressura", Sans-serif;
+   
+   
+}
+    
+.firemky-item-three a {
+    font-size: 25px;
+    font-family: "GT-Pressura", Sans-serif;
+    color: #2c2b2b;
+    padding-top: 20px;
+    
+   
+}
+
+
+
+
+ /*........... footer...............*/  
+  
+
+
+
+footer p {
+    background: #979A9A;
+    font-size: 20px;
+    margin: 0px auto;
+    text-align: center;
+    padding: 25px 0px;
+    
+}
+
+/*..........scrollup-icon............*/
+
+.scrollup-icon img {
+    width: 40px;
+    position: fixed;
+    top: 94%;
+    left: 96%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 90px;
+    
+    
+}
+
+
+  
