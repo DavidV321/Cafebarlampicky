@@ -1150,6 +1150,8 @@ iframe {
     justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    width: 80%;
+    margin: 0 auto;
     
 }
 
