@@ -1,5 +1,5 @@
 <form action="" method="post">
-        <label for="k">Jmeno</label>
+        <label for="">Jmeno</label>
         <input type="text" name="jmeno" id="">
 
         <label for="">Heslo</label>

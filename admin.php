@@ -1,3 +1,37 @@
+<?php
+    //nastartujeme session pro prihalsovani a odhlasovani
+session_start();
+
+
+// login formulare
+if (isset($_post["login-submit"])) {
+        $prihlasovaci_jmeno = $_POST ["jmeno"];
+        $prihlasovaci_heslo = $_POST ["heslo"];
+
+        if ($prihlasovaci_jmeno === "admin" && $prihlasovaci_heslo === "pokus123") {
+                $_SESSION["Jste_prihlasen"] = true;
+        };
+}
+
+// logout formulare
+
+if (isset($_GET["logout-submit"])) {
+    unset($_SESSION["Jste_prihlasen"]);
+    header("location: ?");
+    exit;
+}
+
+
+// kontrola prihlaseni
+// if(array_key_exist("Jste_prihlaseni", $_SESSION))
+
+?>
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -21,12 +55,25 @@
         <div class="box">
             <div class="form">
                 <?php
-                require_once "./prihlasovaci-formular.php";
+                if(!isset($_SESSION["Jste_prihlasen"])) {
+                    require_once "./prihlasovaci-formular.php";
+                    
+                }else {
+                    echo "<a href='?logout-submit'>Odhlásit se</a>";
+                    require_once "./editor-stranek.php";
+
+                }
+                
                 ?>
             </div>
         </div>
 
-
+        <?php 
+        
+        
+        
+        
+        ?>
 
     </header>
 

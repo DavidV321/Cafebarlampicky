@@ -23,12 +23,15 @@ header {
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70%;
-
+   
 }
 
 .title h2 {
     color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -58,11 +61,17 @@ header {
    margin: 10px auto;
    border: 1px solid black;
    font-size: 15px;
-  
+   padding: 10px 0px;
 }
 
 .form input[type="submit"] {
-    width: 200%;
+    width: 40%;
+    margin: 15px auto;
+    padding: 10px 15%;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    
 }
 
 
