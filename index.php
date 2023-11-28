@@ -78,21 +78,15 @@ if (array_key_exists("stranka", $_GET)) {
          
         </nav>
       </div>
-       
-   <div class="header-text2">
-      <h1>VEČEŘE</h1>
-     
-    </div>
 
-    
     </header>
    
         <section>
 
             <?php
                 // napojeni obsahu stranek
+             
                 echo file_get_contents("$stranka.html");
-
 
 
 
