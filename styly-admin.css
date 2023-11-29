@@ -1,77 +1,40 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/*.........header........*/
-
-header {
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("images/hlavnifoto.jpg");
-    background-size: cover;
-    height: 100vh;
-    background-attachment: fixed;
-    
-    
-    }
-
-    /* =============== LOGO ============== */
-
-.logo img {
-
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-   
-}
-
-.title h2 {
-    color: white;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
 
-    /* ============= PRIHLASOVACI FORMULAR ============= */
-.box {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    border: 1px solid black;
-    width: 50%;
-    padding: 50px 20px;
-    
-    
-}
+html,
+body {
+    /* height: 100%; */
+    /* display: flex;
+    align-items: center; */
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 
-.form input[type="text"], .form input[type="password"], .form input[type="submit"] {
-    display: flex;
-    flex-direction: column;
-}
+  .admin {
+    width: 80%;
+    margin: 0 auto;
+  }
 
-.form input[type="text"], .form input[type="password"] {
-   border: 1px solid white; 
-   border-radius: 5px;
-   width: 80%;
-   margin: 10px auto;
-   border: 1px solid black;
-   font-size: 15px;
-   padding: 10px 0px;
-}
+  .form-signin {
+    max-width: 330px;
+    padding: 1rem;
+  }
+  
+  .form-signin .form-floating:focus-within {
+    z-index: 2;
+  }
+  
+  .form-signin input[name="jmeno"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .form-signin input[name="heslo"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
 
-.form input[type="submit"] {
-    width: 40%;
-    margin: 15px auto;
-    padding: 10px 15%;
-    font-size: 15px;
-    border: 1px solid black;
-    border-radius: 5px;
-    
-}
-
-
+  #stranky .btn {
+        margin-right: 15px;
+  }

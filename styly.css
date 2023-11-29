@@ -800,25 +800,22 @@ input[name="r"]{
 
 /*..............lunch.html.............*/
 
+
+
+
 .lunch {
-    margin: 0px auto;
-    padding: 150px 250px;
+    margin: 40px auto;
+    height: 600px;
 }
 
-.lunch img {
-    width: 80%;
-    height: 80%;
-}
-
-.lunch-items {
+.lunch-text p{
     text-align: center;
     font-size: 25px;
     font-family:  "GT-Pressura", Sans-serif; 
 }
 
 .odkaz-inst2 {
-    margin-left: 217px;
-    margin-bottom: 45px;
+    text-align: center;
 }
 
 
@@ -838,7 +835,7 @@ input[name="r"]{
 
 
 
-/*.............dinner.html.............*/
+/*..........obedy, vecere, napoje .............*/
 
 
 .header-text2 {
@@ -865,57 +862,7 @@ input[name="r"]{
     margin: 20px auto;
     }
 
-.dinner-text {
-    margin: 40px 100px 60px 180px;
-    font-size: 20px;
-    font-family: "GT-Pressura", Sans-serif;
-    
-}
 
-.dinner-text h3 {
-    padding: 25px 0px 25px 60px;
-    font-family: "GT-Pressura", Sans-serif;
-    
-}
-    
-.dinner-menu ul li {
-    list-style-type: none;
-    padding-bottom: 20px;
-    padding-left: 60px;
-  
-}
-
-
-
-/*...........dinner menu.........*/
-
-.dinner-item {
-    font-family: "GT-Pressura", Sans-serif;
-    list-style-type: none;
-    float: left;
-    margin-bottom: 15px;
-    margin-left: 57px;
-}
-
-.dinner-price {
-   font-family: "GT-Pressura", Sans-serif;
-    list-style-type: none;
-    text-align: right;
-    margin-bottom: 15px;
-    margin-right: 65px;
-   
-}
-
-/*
-.clearfix {zoom}
-.clearfix: after {
-    content: "";
-    clear: both;
-    display: block;
-    height: 0;
-    visibility: hidden;
-}
-*/
 /*...........Kontakty...........*/
 
   
@@ -1305,6 +1252,24 @@ footer p {
     border-radius: 90px;
     
     
+}
+
+/* ======= uprava stranka neexistuje ======== */
+
+.stranka-neexistuje {
+    width: 35%;
+    margin: 0 auto;
+}
+
+.stranka-neexistuje h1 {
+    text-align: center;
+    margin: 30px 0px;
+    font-size: 40px;
+}
+
+.stranka-neexistuje img {
+    width: 100%;
+    margin-bottom: 30px;
 }
 
 

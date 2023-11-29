@@ -1,8 +1,21 @@
 <?php
 
-// upravuji nacitani stranky pomoci GET tj. co je v URL stranky
+require "seznam-stranek.php";
+
+// upravuji nacitani stranky pomoci GET 
 if (array_key_exists("stranka", $_GET)) {
     $stranka = $_GET["stranka"];
+
+    // kontrola zda li zadana stranka existuje
+    if (!array_key_exists($stranka, $seznam_stranek)) {
+
+      // stranka neexistuje
+      $stranka = "404";
+
+      // odeslat informaci i vyhledavaci ze URL neexistuje
+      http_response_code(404);
+
+    }
 
 }else {
     $stranka = "domu";
@@ -17,18 +30,16 @@ if (array_key_exists("stranka", $_GET)) {
 
 
 
-
-
-
 <!DOCTYPE html>
 <html lang="cs">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cafe bar Lampičky: Vaše rodinné bistro</title>
+  <title><?php echo $seznam_stranek[$stranka]->titulek ?> </title>
     <link rel="icon" type="images/png" href="images/favicona.png">
     <link rel="stylesheet" href="photogalery/lightbox.min.css"> 
   <link rel="stylesheet" href="styly.css">
+  <link rel="stylesheet" href="styly-menu.css">
   <link rel="stylesheet" href="queries.css"> 
  <link rel="stylesheet" href="adress/grid.css">
  <script src="photogalery/lightbox-plus-jquery.min.js"></script>
@@ -62,15 +73,15 @@ if (array_key_exists("stranka", $_GET)) {
      
         <nav>
             <ul>
+              <li><a href="dinneren.html"><img src="images/flagen.png"></a></li>
+              <?php
+
+              // vlozeni dynamickeho menu
+                require "./menu.php";
+
+              ?>
+              
                
-                <li><a href="dinneren.html"><img src="images/flagen.png"></a></li>
-                <li><a href="?stranka=domu">DOMŮ</a></li>
-                <li><a href="?stranka=obedy">OBĚDY</a></li>
-                <li><a href="?stranka=vecere">VEČEŘE</a></li>
-                <li><a href="?stranka=napoje">NÁPOJE</a></li>
-                <li><a href="?stranka=catering">CATERING</a></li>
-                <li><a href="?stranka=galerie">GALERIE</a></li>
-                <li><a href="?stranka=kontakty">KONTAKTY</a></li>
             </ul>
             
             <div class="mobile-nav-back"></div>
@@ -86,7 +97,8 @@ if (array_key_exists("stranka", $_GET)) {
             <?php
                 // napojeni obsahu stranek
              
-                echo file_get_contents("$stranka.html");
+               echo $seznam_stranek[$stranka]->get_obsah();
+                // echo file_get_contents("$stranka.html");
 
 
 
