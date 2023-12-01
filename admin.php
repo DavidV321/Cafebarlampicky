@@ -170,10 +170,10 @@ if (array_key_exists("prihlaseny_uzivatel", $_SESSION)) {
                 }
 
             echo "<li class='list-group-item $active'>
-             <a class='btn $button_class' href='?stranka=$instance_stranky->id'>editovat</a>
-             <a class='btn $button_class' href='$instance_stranky->id' target='_blank'>zobrazit</a>
+             <a class='btn $button_class' href='?stranka={$instance_stranky->get_id()}'>editovat</a>
+             <a class='btn $button_class' href='{$instance_stranky->get_id()}' target='_blank'>zobrazit</a>
 
-            <span>$instance_stranky->id</span>
+            <span>{$instance_stranky->get_id()}</span>
             </li>";
         }
 
@@ -185,7 +185,7 @@ if (array_key_exists("prihlaseny_uzivatel", $_SESSION)) {
             if ($instance_aktualni_stranky != null) {
 
                 echo "<div class='alert alert-secondary' role='alert'>
-                  <h1>Editace stránky: $instance_aktualni_stranky->id</h1></div> ";
+                  <h1>Editace stránky: {$instance_aktualni_stranky->get_id()}</h1></div> ";
                 ?>
                     <form action="" method="post">
                         <textarea name="obsah" id="obsah" cols="150" rows="30"><?php
