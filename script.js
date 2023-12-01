@@ -35,8 +35,6 @@ $(".jq--scroll-header-text").click(function(){
     $("html, body").animate({scrollTop: $(".jq--header-text").offset().top}, 1000);
 });
     
-     
-
        
    }); 
 })(jQuery);

@@ -35,7 +35,7 @@ if (array_key_exists("stranka", $_GET)) {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?php echo $seznam_stranek[$stranka]->titulek ?> </title>
+  <title><?php echo $seznam_stranek[$stranka]->get_titulek() ?> </title>
     <link rel="icon" type="images/png" href="images/favicona.png">
     <link rel="stylesheet" href="photogalery/lightbox.min.css"> 
   <link rel="stylesheet" href="styly.css">
@@ -50,7 +50,7 @@ if (array_key_exists("stranka", $_GET)) {
   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
   crossorigin="anonymous"></script>
     
-    <script src="sript.js"></script>
+    <script src="script.js"></script>
     
 </head>
 
@@ -89,7 +89,10 @@ if (array_key_exists("stranka", $_GET)) {
          
         </nav>
       </div>
-
+      <div class="header-text2">
+        <h1><?php echo $seznam_stranek[$stranka]->get_nadpis(); ?></h1>
+      </div>
+   
     </header>
    
         <section>
@@ -108,11 +111,15 @@ if (array_key_exists("stranka", $_GET)) {
 
 
     <footer>
-    <p>
-      &copy; 2023  WebproDesign &copy; www.WebproDesign.cz
-        </p>
+      <p>
+        &copy; 2023  WebproDesign &copy; www.WebproDesign.cz
+      </p>
     
+
+      <div class="scrollup-icon jq--scroll-header-text">
+        <img src="images/scrollup.png">
+      </div> 
     </footer>
-  
+    
 </body>
 </html>

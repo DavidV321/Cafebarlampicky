@@ -1,3 +1,34 @@
+<?php
+
+require "seznam-stranek.php";
+
+// upravuji nacitani stranky pomoci GET 
+if (array_key_exists("stranka", $_GET)) {
+    $stranka = $_GET["stranka"];
+
+    // kontrola zda li zadana stranka existuje
+    if (!array_key_exists($stranka, $seznam_stranek)) {
+
+      // stranka neexistuje
+      $stranka = "404";
+
+      // odeslat informaci i vyhledavaci ze URL neexistuje
+      http_response_code(404);
+
+    }
+
+}else {
+    $stranka = "domu";
+}
+
+
+
+// var_dump($stranka);
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -22,6 +53,7 @@
 </head>
 
 <body>
+ 
   <header>
       <div class="nav-backround">
       
@@ -38,17 +70,17 @@
           <a href="https:/www.instagram.com/cafebar_lampicky/" target="_blank"><img src="images/inst.png"></a>
           </div>
      
-        <nav>
+          <nav>
             <ul>
+              <li><a href="dinneren.html"><img src="images/flagen.png"></a></li>
+              <?php
+
+              // vlozeni dynamickeho menu
+                require "./menu.php";
+
+              ?>
+              
                
-                <li><a href=""><img src="images/flagen.png"></a></li>
-                <li><a href="index.php?stranka=domu">DOMŮ</a></li>
-                <li><a href="index.php?stranka=obedy">OBĚDY</a></li>
-                <li><a href="index.php?stranka=vecere">VEČEŘE</a></li>
-                <li><a href="index.php?stranka=napoje">NÁPOJE</a></li>
-                <li><a href="index.php?stranka=catering">CATERING</a></li>
-                <li><a href="index.php?stranka=galerie">GALERIE</a></li>
-                <li><a href="index.php?stranka=kontakty">KONTAKTY</a></li>
             </ul>
             
             <div class="mobile-nav-back"></div>
