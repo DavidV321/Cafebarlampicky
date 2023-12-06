@@ -53,11 +53,11 @@ $seznam_stranek = [
     "obedy" => new Stranka ("obedy", "Cafe bar Lampičky - obědy", "OBĚDY", "OBĚDY"),
     "vecere" => new Stranka ("vecere", "Cafe bar Lampičky - večeře", "VEČEŘE", "VEČEŘE"),
     "napoje" => new Stranka ("napoje", "Cafe bar Lampičky - nápoje", "NÁPOJE", "NÁPOJE"),
-    "catering" => new Stranka ("catering", "Cafe bar Lampičky - catering", "CATERING", "CATERING"),
+    "cetering" => new Stranka ("cetering", "Cafe bar Lampičky - catering", "CATERING", "CATERING"),
     "galerie" => new Stranka ("galerie", "Cafe bar Lampičky - galerie", "GALERIE", "GALERIE"),
     "kontakty" => new Stranka ("kontakty", "Cafe bar Lampičky - kontakty", "KONTAKTY", "KONTAKTY"),
 //     "firemky" => new Stranka ("firemky", "Cafe bar Lampičky - firemky", ""),
-    "404" => new Stranka ("404", "Stránka neexistuje", "", ""),  
+    "404" => new Stranka ("404", "Stránka neexistuje", "", "404"),  
 ];
 
 

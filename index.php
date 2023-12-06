@@ -116,9 +116,9 @@ if (array_key_exists("stranka", $_GET)) {
       </p>
     
 
-      <div class="scrollup-icon jq--scroll-header-text">
+      <!-- <div class="scrollup-icon jq--scroll-header-text">
         <img src="images/scrollup.png">
-      </div> 
+      </div>  -->
     </footer>
     
 </body>

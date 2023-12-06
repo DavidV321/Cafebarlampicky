@@ -20,7 +20,7 @@ $(".jq--nav-icon").click(function(){
      if($(".jq--image-hamburger").attr("src") == "images/hamburgerMenu.png" )
     {     
    $( $(".jq--image-hamburger").attr("src","images/crossMenu.png"));
- }
+   }
     else
     {
   $( $(".jq--image-hamburger").attr("src","images/hamburgerMenu.png"));

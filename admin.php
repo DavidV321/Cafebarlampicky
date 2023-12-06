@@ -9,20 +9,22 @@ $chyba = "";
 // zpracovani formulare
 if (array_key_exists("prihlasit", $_POST)) {
 
-    $jmeno = $_POST ["jmeno"];
-    $heslo = $_POST ["heslo"];
+    $jmeno = $_POST["jmeno"];
+    $heslo = $_POST["heslo"];
 
     // nastaveni pevneho prihlasovaciho jmena a hesla
-    if ($jmeno == "admin" && $heslo == "pokus123");
+    if ($jmeno == "admin" && $heslo == "pokus123"){
 
     // pri zadani platnehych udaju
-    $_SESSION ["prihlaseny_uzivatel"] = $jmeno;
+    $_SESSION["prihlaseny_uzivatel"] = $jmeno;
 
 
 
 }else {
     // pri zadani spatnehych udaju
     $chyba = "Nesprávné přihlašovací údaje";
+
+}
 
 }
 
@@ -204,11 +206,11 @@ if (array_key_exists("prihlaseny_uzivatel", $_SESSION)) {
                         language: 'cs',
                         language_url: '<?php echo dirname($_SERVER["PHP_SELF"]); ?>/vendor/tweeb/tinymce-i18n/langs/cs.js',
                         height: '50vh',
-                        entity_encoding: "row",
+                        entity_encoding: "raw",
                         content_css: ["./styly.css", "./styly-menu.css"],
                         cleanup: false,
                         verify_html: false,
-                        plugins: ["code", "image", "anchor", "autolink", "autoresize", "link", "media", "lists", "advlist", "colorpicker", "contextmenu", "fullscreen"],
+                        plugins: ["code", "image", "responsivefilemanager", "anchor", "autolink", "autoresize", "link", "media", "lists", "advlist", "colorpicker", "contextmenu", "fullscreen"],
                         toolbar1: 'formatselect | bold italic strikethrough | alignleft aligncenter alignright alignjustify  | numlist bullist outdent indent  | removeformat',
                         toolbar2: "| responsivefilemanager | link | image media | forecolor backcolor  | print preview code ",
                         external_plugins: {
