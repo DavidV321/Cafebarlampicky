@@ -7,3 +7,5 @@ RewriteEngine On
 # uprava URL 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule (.+) index.php?stranka=$1 [L,QSA]
+
+ 

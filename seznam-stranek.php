@@ -1,7 +1,5 @@
 <?php
 
-// dynamicky seznam stranek
-
 class Stranka {
         private $id;
         private $titulek;
@@ -56,7 +54,7 @@ $seznam_stranek = [
     "cetering" => new Stranka ("cetering", "Cafe bar Lampičky - catering", "CATERING", "CATERING"),
     "galerie" => new Stranka ("galerie", "Cafe bar Lampičky - galerie", "GALERIE", "GALERIE"),
     "kontakty" => new Stranka ("kontakty", "Cafe bar Lampičky - kontakty", "KONTAKTY", "KONTAKTY"),
-//     "firemky" => new Stranka ("firemky", "Cafe bar Lampičky - firemky", ""),
+//     "firemka" => new Stranka ("firemka", "Cafe bar Lampičky - firemky", "", ""),
     "404" => new Stranka ("404", "Stránka neexistuje", "", "404"),  
 ];
 
@@ -65,4 +63,5 @@ $seznam_stranek_admin = [
         "obedy" => new Stranka ("obedy", "Cafe bar Lampičky - obědy", "OBĚDY", "OBĚDY"),
         "vecere" => new Stranka ("vecere", "Cafe bar Lampičky - večeře", "VEČEŘE", "VEČEŘE"),
         "napoje" => new Stranka ("napoje", "Cafe bar Lampičky - nápoje", "NÁPOJE", "NÁPOJE"),
+        
 ];

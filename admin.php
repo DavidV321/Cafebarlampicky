@@ -189,13 +189,15 @@ if (array_key_exists("prihlaseny_uzivatel", $_SESSION)) {
                 echo "<div class='alert alert-secondary' role='alert'>
                   <h1>Editace stránky: {$instance_aktualni_stranky->get_id()}</h1></div> ";
                 ?>
+        </div>
                     <form action="" method="post">
                         <textarea name="obsah" id="obsah" cols="150" rows="30"><?php
                         echo htmlspecialchars ($instance_aktualni_stranky->get_obsah());
                         ?></textarea>
                         <br>
+                     <div class="admin"> 
                         <button class="btn btn-primary" name="ulozit">Uložit</button>
-
+                    </div>  
                     </form>
                     <!-- pripojeni scriptu tinymce pro prehlednejsi editovani -->
                     <script src="vendor/tinymce/tinymce/tinymce.min.js" referrerpolicy="origin"></script>
@@ -228,7 +230,7 @@ if (array_key_exists("prihlaseny_uzivatel", $_SESSION)) {
         }
             ?>
 
-  </div>
+  
 
     
 </body>

@@ -23,7 +23,7 @@ if (array_key_exists("stranka", $_GET)) {
 
 
 
-// var_dump($stranka);
+
 
 
 ?>
@@ -73,11 +73,11 @@ if (array_key_exists("stranka", $_GET)) {
      
         <nav>
             <ul>
-              <li><a href="dinneren.html"><img src="images/flagen.png"></a></li>
+              <li><a href="indexen.php"><img src="images/flagen.png"></a></li>
               <?php
 
               // vlozeni dynamickeho menu
-                require "./menu.php";
+                require "./menu_cs.php";
 
               ?>
               

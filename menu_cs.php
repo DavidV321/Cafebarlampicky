@@ -12,4 +12,4 @@ foreach ($seznam_stranek as $id_stranky => $instance_stranky) {
     }
 
    
-}
+} 
