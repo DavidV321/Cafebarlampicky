@@ -54,7 +54,7 @@ $seznam_stranek = [
     "cetering" => new Stranka ("cetering", "Cafe bar Lampičky - catering", "CATERING", "CATERING"),
     "galerie" => new Stranka ("galerie", "Cafe bar Lampičky - galerie", "GALERIE", "GALERIE"),
     "kontakty" => new Stranka ("kontakty", "Cafe bar Lampičky - kontakty", "KONTAKTY", "KONTAKTY"),
-//     "firemka" => new Stranka ("firemka", "Cafe bar Lampičky - firemky", "", ""),
+    "firemka" => new Stranka ("firemka", "Cafe bar Lampičky - firemky", "", "FIREMKY"),
     "404" => new Stranka ("404", "Stránka neexistuje", "", "404"),  
 ];
 
