@@ -46,22 +46,42 @@ class Stranka {
 
 
 // pole stranek 
-$seznam_stranek = [
-    "domu" => new Stranka ("domu", "Cafe bar Lampičky: Vaše rodinné bistro", "DOMŮ", ""),
-    "obedy" => new Stranka ("obedy", "Cafe bar Lampičky - obědy", "OBĚDY", "OBĚDY"),
-    "vecere" => new Stranka ("vecere", "Cafe bar Lampičky - večeře", "VEČEŘE", "VEČEŘE"),
-    "napoje" => new Stranka ("napoje", "Cafe bar Lampičky - nápoje", "NÁPOJE", "NÁPOJE"),
-    "cetering" => new Stranka ("cetering", "Cafe bar Lampičky - catering", "CATERING", "CATERING"),
-    "galerie" => new Stranka ("galerie", "Cafe bar Lampičky - galerie", "GALERIE", "GALERIE"),
-    "kontakty" => new Stranka ("kontakty", "Cafe bar Lampičky - kontakty", "KONTAKTY", "KONTAKTY"),
-    "firemka" => new Stranka ("firemka", "Cafe bar Lampičky - firemky", "", "FIREMKY"),
-    "404" => new Stranka ("404", "Stránka neexistuje", "", "404"),  
-];
+$pole_stranek = array (
+        'cs' => array (
+                "domu" => new Stranka ("domu", "Cafe bar Lampičky: Vaše rodinné bistro", "DOMŮ", ""),
+                "obedy" => new Stranka ("obedy", "Cafe bar Lampičky - obědy", "OBĚDY", "OBĚDY"),
+                "vecere" => new Stranka ("vecere", "Cafe bar Lampičky - večeře", "VEČEŘE", "VEČEŘE"),
+                "napoje" => new Stranka ("napoje", "Cafe bar Lampičky - nápoje", "NÁPOJE", "NÁPOJE"),
+                "cetering" => new Stranka ("cetering", "Cafe bar Lampičky - catering", "CATERING", "CATERING"),
+                "galerie" => new Stranka ("galerie", "Cafe bar Lampičky - galerie", "GALERIE", "GALERIE"),
+                "kontakty" => new Stranka ("kontakty", "Cafe bar Lampičky - kontakty", "KONTAKTY", "KONTAKTY"),
+                "firemka" => new Stranka ("firemka", "Cafe bar Lampičky - firemky", "", "FIREMKY"),
+                "404" => new Stranka ("404", "Stránka neexistuje", "", "404"),  
+        ),
+
+        'en' => array (
+                "domu" => new Stranka ("home", "Cafe bar Lampičky: Your family bistro", "HOME", ""),
+                "obedy" => new Stranka ("lunch", "Cafe bar Lampičky - lunch", "LUNCH", "LUNCH"),
+                "vecere" => new Stranka ("dinner", "Cafe bar Lampičky - dinner", "DINNER", "DINNER"),
+                "napoje" => new Stranka ("drink", "Cafe bar Lampičky - drinks", "DRINKS", "DRINKS"),
+                "cetering" => new Stranka ("ceteringen", "Cafe bar Lampičky - catering", "CATERING", "CATERING"),
+                "galerie" => new Stranka ("gallery", "Cafe bar Lampičky - gallery", "GALLERY", "GALLERY"),
+                "kontakty" => new Stranka ("contacts", "Cafe bar Lampičky - contacts", "CONTACTS", "CONTACTS"),
+                "firemka" => new Stranka ("event", "Cafe bar Lampičky - event", "", "EVENTS"),
+                "404" => new Stranka ("404", "Stránka neexistuje", "", "404"),  
+        )
+
+        );
+   
+
 
 
 $seznam_stranek_admin = [
         "obedy" => new Stranka ("obedy", "Cafe bar Lampičky - obědy", "OBĚDY", "OBĚDY"),
         "vecere" => new Stranka ("vecere", "Cafe bar Lampičky - večeře", "VEČEŘE", "VEČEŘE"),
         "napoje" => new Stranka ("napoje", "Cafe bar Lampičky - nápoje", "NÁPOJE", "NÁPOJE"),
+        "obedy" => new Stranka ("lunch", "Cafe bar Lampičky - lunch", "LUNCH", "LUNCH"),
+        "vecere" => new Stranka ("dinner", "Cafe bar Lampičky - dinner", "DINNER", "DINNER"),
+        "napoje" => new Stranka ("drink", "Cafe bar Lampičky - drinks", "DRINKS", "DRINKS"),
         
 ];

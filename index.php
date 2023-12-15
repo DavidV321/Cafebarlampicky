@@ -2,28 +2,32 @@
 
 require "seznam-stranek.php";
 
-// upravuji nacitani stranky pomoci GET 
-if (array_key_exists("stranka", $_GET)) {
-    $stranka = $_GET["stranka"];
+$lang = "cs"; // Defaultní jazyk, může být změněn v URL parametru
 
-    // kontrola zda li zadana stranka existuje
-    if (!array_key_exists($stranka, $seznam_stranek)) {
-
-      // stranka neexistuje
-      $stranka = "404";
-
-      // odeslat informaci i vyhledavaci ze URL neexistuje
-      http_response_code(404);
-
-    }
-
-}else {
-    $stranka = "domu";
+if (array_key_exists("lang", $_GET) && ($_GET["lang"] == "en")) {
+    $lang = "en"; // Pokud je v URL parametru zvolen anglický jazyk, použije se
 }
 
+// upravuji nacitani stranky pomoci GET 
+if (array_key_exists("id-stranky", $_GET)) {
+  $id_stranky = $_GET["id-stranky"];
 
+    // // kontrola zda li zadana stranka existuje
+    // if (!array_key_exists($id_stranky, $seznam_stranek)) {
 
+    //   // stranka neexistuje
+    //   $id_stranky = "404";
 
+    //   // odeslat informaci i vyhledavaci ze URL neexistuje
+    //   http_response_code(404);
+
+    // }
+
+}else {
+  $id_stranky = "domu";
+}
+
+$menu = $pole_stranek[$lang]; // Vybere správný jazykový menu
 
 
 ?>
@@ -31,11 +35,11 @@ if (array_key_exists("stranka", $_GET)) {
 
 
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="<?php echo $lang; ?>">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?php echo $seznam_stranek[$stranka]->get_titulek() ?> </title>
+  <title><?php echo  $menu[$id_stranky]->get_titulek(); ?> </title>
     <link rel="icon" type="images/png" href="images/favicona.png">
     <link rel="stylesheet" href="photogalery/lightbox.min.css"> 
   <link rel="stylesheet" href="styly.css">
@@ -73,11 +77,23 @@ if (array_key_exists("stranka", $_GET)) {
      
         <nav>
             <ul>
-              <li><a href="indexen.php"><img src="images/flagen.png"></a></li>
-              <?php
-
-              // vlozeni dynamickeho menu
-                require "./menu_cs.php";
+              
+                 <!-- Přepínač jazyků -->
+                <?php
+                if ($lang === "cs") {
+                    echo "<li><a href='?lang=en&id-stranky={$id_stranky}'>English</a></li>";
+                } else {
+                    echo "<li><a href='?lang=cs&id-stranky={$id_stranky}'>Čeština</a></li>";
+                }
+                ?>
+                <?php
+                foreach ($menu as $stranka => $instance_stranky) {
+                  if ($instance_stranky->get_menu() != "") {
+                      $escaped_menu = htmlspecialchars($instance_stranky->get_menu());
+                      $escaped_id = htmlspecialchars($stranka);
+                      echo "<li><a href='?lang={$lang}&id-stranky={$escaped_id}'>{$escaped_menu}</a></li>";
+                  }
+              }
 
               ?>
               
@@ -90,7 +106,7 @@ if (array_key_exists("stranka", $_GET)) {
         </nav>
       </div>
       <div class="header-text2">
-        <h1><?php echo $seznam_stranek[$stranka]->get_nadpis(); ?></h1>
+        <h1><?php echo $menu[$id_stranky]->get_nadpis(); ?></h1>
       </div>
    
     </header>
@@ -100,7 +116,7 @@ if (array_key_exists("stranka", $_GET)) {
             <?php
                 // napojeni obsahu stranek
              
-               echo $seznam_stranek[$stranka]->get_obsah();
+               echo $menu[$id_stranky]->get_obsah();
                 // echo file_get_contents("$stranka.html");
 
 
