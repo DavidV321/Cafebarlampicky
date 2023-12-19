@@ -81,9 +81,9 @@ $menu = $pole_stranek[$lang]; // Vybere správný jazykový menu
                  <!-- Přepínač jazyků -->
                 <?php
                 if ($lang === "cs") {
-                    echo "<li><a href='?lang=en&id-stranky={$id_stranky}'>English</a></li>";
+                    echo "<li><a href='?lang=en&id-stranky={$id_stranky}'>EN</a></li>";
                 } else {
-                    echo "<li><a href='?lang=cs&id-stranky={$id_stranky}'>Čeština</a></li>";
+                    echo "<li><a href='?lang=cs&id-stranky={$id_stranky}'>CZE</a></li>";
                 }
                 ?>
                 <?php

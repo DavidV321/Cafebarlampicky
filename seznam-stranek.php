@@ -80,8 +80,7 @@ $seznam_stranek_admin = [
         "obedy" => new Stranka ("obedy", "Cafe bar Lampičky - obědy", "OBĚDY", "OBĚDY"),
         "vecere" => new Stranka ("vecere", "Cafe bar Lampičky - večeře", "VEČEŘE", "VEČEŘE"),
         "napoje" => new Stranka ("napoje", "Cafe bar Lampičky - nápoje", "NÁPOJE", "NÁPOJE"),
-        "obedy" => new Stranka ("lunch", "Cafe bar Lampičky - lunch", "LUNCH", "LUNCH"),
-        "vecere" => new Stranka ("dinner", "Cafe bar Lampičky - dinner", "DINNER", "DINNER"),
-        "napoje" => new Stranka ("drink", "Cafe bar Lampičky - drinks", "DRINKS", "DRINKS"),
+      
         
 ];
+

@@ -46,10 +46,10 @@ if (array_key_exists("prihlaseny_uzivatel", $_SESSION)) {
 
 
     // zpracovani vyberu aktualni stranky
-    if (array_key_exists("stranka", $_GET)) {
+    if (array_key_exists("id-stranky", $_GET)) {
 
-        $id_stranky = $_GET["stranka"];
-        $instance_aktualni_stranky = $seznam_stranek[$id_stranky];
+        $id_stranky = $_GET["id-stranky"];
+        $instance_aktualni_stranky = $seznam_stranek_admin[$id_stranky];
     }
 
     // zpracovani editacniho formulare pro ulozeni 
@@ -60,7 +60,7 @@ if (array_key_exists("prihlaseny_uzivatel", $_SESSION)) {
     }
 }
 
-
+// var_dump ($instance_aktualni_stranky);
 
 ?>
 
@@ -172,7 +172,7 @@ if (array_key_exists("prihlaseny_uzivatel", $_SESSION)) {
                 }
 
             echo "<li class='list-group-item $active'>
-             <a class='btn $button_class' href='?stranka={$instance_stranky->get_id()}'>editovat</a>
+             <a class='btn $button_class' href='?id=stranky={$instance_stranky->get_id()}'>editovat</a>
              <a class='btn $button_class' href='{$instance_stranky->get_id()}' target='_blank'>zobrazit</a>
 
             <span>{$instance_stranky->get_id()}</span>
