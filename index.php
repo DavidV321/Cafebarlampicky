@@ -77,15 +77,6 @@ $menu = $pole_stranek[$lang]; // Vybere správný jazykový menu
      
         <nav>
             <ul>
-              
-                 <!-- Přepínač jazyků -->
-                <?php
-                if ($lang === "cs") {
-                    echo "<li><a href='?lang=en&id-stranky={$id_stranky}'>EN</a></li>";
-                } else {
-                    echo "<li><a href='?lang=cs&id-stranky={$id_stranky}'>CZE</a></li>";
-                }
-                ?>
                 <?php
                 foreach ($menu as $stranka => $instance_stranky) {
                   if ($instance_stranky->get_menu() != "") {
@@ -96,7 +87,14 @@ $menu = $pole_stranek[$lang]; // Vybere správný jazykový menu
               }
 
               ?>
-              
+               <!-- Přepínač jazyků -->
+               <?php
+                if ($lang === "cs") {
+                    echo "<li><a href='?lang=en&id-stranky={$id_stranky}'>EN</a></li>";
+                } else {
+                    echo "<li><a href='?lang=cs&id-stranky={$id_stranky}'>CZE</a></li>";
+                }
+                ?>
                
             </ul>
             

@@ -172,7 +172,7 @@ if (array_key_exists("prihlaseny_uzivatel", $_SESSION)) {
                 }
 
             echo "<li class='list-group-item $active'>
-             <a class='btn $button_class' href='?id=stranky={$instance_stranky->get_id()}'>editovat</a>
+             <a class='btn $button_class' href='?id-stranky={$instance_stranky->get_id()}'>editovat</a>
              <a class='btn $button_class' href='{$instance_stranky->get_id()}' target='_blank'>zobrazit</a>
 
             <span>{$instance_stranky->get_id()}</span>
