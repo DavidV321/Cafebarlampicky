@@ -6,9 +6,8 @@ RewriteEngine On
 
 # uprava URL 
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule (.+) index.php?lang=cs&id-stranky=$1 [L,QSA]
+RewriteRule (.+)/(.+) index.php?lang=$1&id-stranky=$2 [L,QSA]
 
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule (.+) index.php?lang=en&id-stranky=$1 [L,QSA]
+
 
  

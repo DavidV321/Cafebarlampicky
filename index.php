@@ -30,6 +30,17 @@ if (array_key_exists("id-stranky", $_GET)) {
 $menu = $pole_stranek[$lang]; // Vybere správný jazykový menu
 
 
+// definovani cesty scriptu pro nacitani css
+$BASEURL = dirname($_SERVER['SCRIPT_NAME']);
+
+
+if (!str_ends_with($BASEURL, '/')) {
+
+
+    $BASEURL .= '/';
+
+}
+
 ?>
 
 
@@ -40,13 +51,13 @@ $menu = $pole_stranek[$lang]; // Vybere správný jazykový menu
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php echo  $menu[$id_stranky]->get_titulek(); ?> </title>
-    <link rel="icon" type="images/png" href="images/favicona.png">
-    <link rel="stylesheet" href="photogalery/lightbox.min.css"> 
-  <link rel="stylesheet" href="styly.css">
-  <link rel="stylesheet" href="styly-menu.css">
-  <link rel="stylesheet" href="queries.css"> 
- <link rel="stylesheet" href="adress/grid.css">
- <script src="photogalery/lightbox-plus-jquery.min.js"></script>
+    <link rel="icon" type="images/png" href="<?php echo $BASEURL?>images/favicona.png">
+    <link rel="stylesheet" href="<?php echo $BASEURL?>photogalery/lightbox.min.css"> 
+  <link rel="stylesheet" href="<?php echo $BASEURL?>styly.css">
+  <link rel="stylesheet" href="<?php echo $BASEURL?>styly-menu.css">
+  <link rel="stylesheet" href="<?php echo $BASEURL?>queries.css"> 
+ <link rel="stylesheet" href="<?php echo $BASEURL?>adress/grid.css">
+ <script src="<?php echo $BASEURL?>photogalery/lightbox-plus-jquery.min.js"></script>
     
     
     <script
@@ -54,7 +65,7 @@ $menu = $pole_stranek[$lang]; // Vybere správný jazykový menu
   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
   crossorigin="anonymous"></script>
     
-    <script src="script.js"></script>
+    <script src="<?php echo $BASEURL?>script.js"></script>
     
 </head>
 
