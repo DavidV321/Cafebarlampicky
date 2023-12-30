@@ -1,5 +1,6 @@
 <?php
-
+// pripojime knihovny pomoci souboru autoload
+require_once "./vendor/autoload.php";
 require "seznam-stranek.php";
 
 $lang = "cs"; // Defaultní jazyk, může být změněn v URL parametru
@@ -83,7 +84,7 @@ if (!str_ends_with($BASEURL, '/')) {
         <a href="https://www.facebook.com/cafelampicky/" target="_blank"><img src="images/fcb.png"></a>
           </div> 
     <div class="instagram">
-          <a href="https:/www.instagram.com/cafebar_lampicky/" target="_blank"><img src="images/inst.png"></a>
+          <a href="https:/www.instagram.com/cafebar_lampicky/" target="_blank"><img src="<?php echo $BASEURL?>images/inst.png"></a>
           </div>
      
         <nav>
@@ -125,7 +126,11 @@ if (!str_ends_with($BASEURL, '/')) {
             <?php
                 // napojeni obsahu stranek
              
-               echo $menu[$id_stranky]->get_obsah();
+                //toto je steary zpusob bez shortcodu
+               //echo $menu[$id_stranky]->get_obsah();
+
+               //toto je novy zpusob se shortcody
+               echo primakurzy\Shortcode\Processor::process("./shortcody", $menu[$id_stranky]->get_obsah());
                 // echo file_get_contents("$stranka.html");
 
 
