@@ -94,7 +94,7 @@ if (!str_ends_with($BASEURL, '/')) {
                   if ($instance_stranky->get_menu() != "") {
                       $escaped_menu = htmlspecialchars($instance_stranky->get_menu());
                       $escaped_id = htmlspecialchars($stranka);
-                      echo "<li><a href='?lang={$lang}&id-stranky={$escaped_id}'>{$escaped_menu}</a></li>";
+                      echo "<li><a href='{$BASEURL}{$lang}/{$escaped_id}'>{$escaped_menu}</a></li>";
                   }
               }
 
@@ -102,9 +102,9 @@ if (!str_ends_with($BASEURL, '/')) {
                <!-- Přepínač jazyků -->
                <?php
                 if ($lang === "cs") {
-                    echo "<li><a href='?lang=en&id-stranky={$id_stranky}'>EN</a></li>";
+                    echo "<li><a href='{$BASEURL}en/{$id_stranky}'>EN</a></li>";
                 } else {
-                    echo "<li><a href='?lang=cs&id-stranky={$id_stranky}'>CZE</a></li>";
+                    echo "<li><a href='{$BASEURL}cs/{$id_stranky}'>CZE</a></li>";
                 }
                 ?>
                
