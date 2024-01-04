@@ -5,6 +5,11 @@
 session_start();
 $chyba = "";
 
+$lang = "cs"; // Defaultní jazyk, může být změněn v URL parametru
+
+if (array_key_exists("lang", $_GET) && ($_GET["lang"] == "en")) {
+    $lang = "en"; // Pokud je v URL parametru zvolen anglický jazyk, použije se
+}
 
 // zpracovani formulare
 if (array_key_exists("prihlasit", $_POST)) {
@@ -13,7 +18,7 @@ if (array_key_exists("prihlasit", $_POST)) {
     $heslo = $_POST["heslo"];
 
     // nastaveni pevneho prihlasovaciho jmena a hesla
-    if ($jmeno == "admin" && $heslo == "pokus123"){
+    if ($jmeno == "admin" && $heslo == "Lampicky123!"){
 
     // pri zadani platnehych udaju
     $_SESSION["prihlaseny_uzivatel"] = $jmeno;
@@ -62,12 +67,23 @@ if (array_key_exists("prihlaseny_uzivatel", $_SESSION)) {
 
 // var_dump ($instance_aktualni_stranky);
 
+// definovani cesty scriptu pro nacitani css
+$BASEURL = dirname($_SERVER['SCRIPT_NAME']);
+
+
+if (!str_ends_with($BASEURL, '/')) {
+
+
+    $BASEURL .= '/';
+
+}
+
 ?>
 
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php echo $lang; ?>">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -173,7 +189,7 @@ if (array_key_exists("prihlaseny_uzivatel", $_SESSION)) {
 
             echo "<li class='list-group-item $active'>
              <a class='btn $button_class' href='?id-stranky={$instance_stranky->get_id()}'>editovat</a>
-             <a class='btn $button_class' href='{$instance_stranky->get_id()}' target='_blank'>zobrazit</a>
+             <a class='btn $button_class' href='{$BASEURL}{$lang}/{$instance_stranky->get_id()}' target='_blank'>zobrazit</a>
 
             <span>{$instance_stranky->get_id()}</span>
             </li>";

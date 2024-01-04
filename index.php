@@ -1,5 +1,6 @@
 <?php
-
+// pripojime knihovny pomoci souboru autoload
+require_once "./vendor/autoload.php";
 require "seznam-stranek.php";
 
 $lang = "cs"; // Defaultní jazyk, může být změněn v URL parametru
@@ -77,13 +78,13 @@ if (!str_ends_with($BASEURL, '/')) {
     
       <div class="nav-bar row">
         <div id="logo">
-         <img src="images/logolampy2.png">
+         <img src="<?php echo $BASEURL?>images/logolampy2.png">
         </div>
     <div class="facebook">
-        <a href="https://www.facebook.com/cafelampicky/" target="_blank"><img src="images/fcb.png"></a>
+        <a href="https://www.facebook.com/cafelampicky/" target="_blank"><img src="<?php echo $BASEURL?>images/fcb.png"></a>
           </div> 
     <div class="instagram">
-          <a href="https:/www.instagram.com/cafebar_lampicky/" target="_blank"><img src="images/inst.png"></a>
+          <a href="https:/www.instagram.com/cafebar_lampicky/" target="_blank"><img src="<?php echo $BASEURL?>images/inst.png"></a>
           </div>
      
         <nav>
@@ -93,7 +94,7 @@ if (!str_ends_with($BASEURL, '/')) {
                   if ($instance_stranky->get_menu() != "") {
                       $escaped_menu = htmlspecialchars($instance_stranky->get_menu());
                       $escaped_id = htmlspecialchars($stranka);
-                      echo "<li><a href='?lang={$lang}&id-stranky={$escaped_id}'>{$escaped_menu}</a></li>";
+                      echo "<li><a href='{$BASEURL}{$lang}/{$escaped_id}'>{$escaped_menu}</a></li>";
                   }
               }
 
@@ -101,9 +102,9 @@ if (!str_ends_with($BASEURL, '/')) {
                <!-- Přepínač jazyků -->
                <?php
                 if ($lang === "cs") {
-                    echo "<li><a href='?lang=en&id-stranky={$id_stranky}'>EN</a></li>";
+                    echo "<li><a href='{$BASEURL}en/{$id_stranky}'>EN</a></li>";
                 } else {
-                    echo "<li><a href='?lang=cs&id-stranky={$id_stranky}'>CZE</a></li>";
+                    echo "<li><a href='{$BASEURL}cs/{$id_stranky}'>CZE</a></li>";
                 }
                 ?>
                
@@ -125,7 +126,11 @@ if (!str_ends_with($BASEURL, '/')) {
             <?php
                 // napojeni obsahu stranek
              
-               echo $menu[$id_stranky]->get_obsah();
+                //toto je steary zpusob bez shortcodu
+               //echo $menu[$id_stranky]->get_obsah();
+
+               //toto je novy zpusob se shortcody
+               echo primakurzy\Shortcode\Processor::process("./shortcody", $menu[$id_stranky]->get_obsah());
                 // echo file_get_contents("$stranka.html");
 
 
@@ -137,7 +142,7 @@ if (!str_ends_with($BASEURL, '/')) {
 
     <footer>
       <p>
-        &copy; 2023  WebproDesign &copy; www.WebproDesign.cz
+        &copy; 2023  Webprodesign &copy; www.webprodesign.cz
       </p>
     
 

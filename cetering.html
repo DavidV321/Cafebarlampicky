@@ -1,86 +1,85 @@
 
-    <main>
+<main>
     
-        <section class="catering-main">
-            <div class="catering-item"><p>Naše společnost vám nově nabízí také služby v oblasti <strong>cateringu</strong>.</p>
-            <p>Řekněte nám, kdy a kde chcete uspořádat svou akci nebo oslavu.</p>
-                <p>Vše ostatní zařídíme my.</p>
-            </div>
-                
-        </section>
-        
-        <section class="catering-segments">
-          <div class="segment-one col span-1-of-3 ">
-             <img src="images/icon1.png">
-              <h3>PRIVÁTNÍ AKCE</h3><br><br><br>
-              <p>Připravíme pro vás menší raut, rodinnou večeři nebo třeba narozeninovou oslavu. 
-              </p>
-            </div>
-         <div class="segment-two col span-1-of-3">
-             <img src="images/icon3.png">
-              <h3>FIREMNÍ AKCE</h3><br><br><br>
-              <p>Naší specializací jsou komornější akce od 30 do 150hostů. Ať už chystáte firemní akci nebo oslovu, připravíme vám raut dle vašich požadavků 
-              </p>
-            </div>
-         <div class="segment-three col span-1-of-3">
-             <img src="images/icon2.png">
-              <h3>SVATBY</h3><br><br><br>
-              <p>Svatba je nejradostnější den dvou lidi, a proto je potřeba ji pořádně připravit. Od přípravy svatebního menu až po konečnou realizaci vám pomůžeme a to vč. zajištění květinové výzdoby. 
-              </p>    
-             </div>
-                
-         </section>
-
-
-
-
-        
-        
-        <section class="we-are-three">
-         <div>
-             <h3>Neváhejte nás kontaktovat</h3>
-        </div>
-            <div class="we-are-item-one">
-              <p>+420 723 797 339</p>
-            </div>
+  <section class="catering-main">
+      <div class="catering-item"><p>Naše společnost vám nově nabízí také služby v oblasti <strong>cateringu</strong>.</p>
+      <p>Řekněte nám, kdy a kde chcete uspořádat svou akci nebo oslavu.</p>
+          <p>Vše ostatní zařídíme my.</p>
+      </div>
           
-         
-           
-         <!--   
-            <?php
-              
-              if($_GET)['success'] == 1){
-            echo "<div class=\"form-result success\">Odeslání proběhlo v pořádku</div>";
-             };
-             if($_GET)['error'] == -1){
-            echo "<div class=\"form-result success\">Chyba. Zkuste znovu</div>";
-             };
-
-            ?>
-              --> 
-          
-                <form action="mailer.php" method="post" class="box">
-                            
-                <h1>Nezávazná poptávka</h1>
-                <input type="text" name="name" placeholder="Jméno a Příjmení">
-                <input type="email" name="email"  placeholder="Email">
-                <input type="text" name="phone" placeholder="Telefonní číslo">
-                <input type="Date" name="date" placeholder="Datum události">
-                <input type="text" name="place" placeholder="Místo konání">
-                <input type="text" name="number" placeholder="Počet osob">
-                    <select name="form" id="">
-                        <option value="privatni akce">Privátní akce</option>
-                        <option value="firemni akce">Firemní akce</option>
-                        <option value="svatba">Svatba</option>
-                        <option value="jine">Jiné</option>                 
-                    </select>
-                    <textarea name="message" cols="30" rows="10" placeholder="Zpráva"></textarea>
-                 <input type="submit" value="Odeslat">
-                </form>
-            
-          
-        </section>
-        
-    </main>
-    
+  </section>
   
+  <section class="catering-segments">
+    <div class="segment-one col span-1-of-3 ">
+       <img src="[baseurl]images/icon1.png">
+        <h3>PRIVÁTNÍ AKCE</h3><br><br><br>
+        <p>Připravíme pro vás menší raut, rodinnou večeři nebo třeba narozeninovou oslavu. 
+        </p>
+      </div>
+   <div class="segment-two col span-1-of-3">
+       <img src="[baseurl]images/icon3.png">
+        <h3>FIREMNÍ AKCE</h3><br><br><br>
+        <p>Naší specializací jsou komornější akce od 30 do 150hostů. Ať už chystáte firemní akci nebo oslovu, připravíme vám raut dle vašich požadavků 
+        </p>
+      </div>
+   <div class="segment-three col span-1-of-3">
+       <img src="[baseurl]images/icon2.png">
+        <h3>SVATBY</h3><br><br><br>
+        <p>Svatba je nejradostnější den dvou lidi, a proto je potřeba ji pořádně připravit. Od přípravy svatebního menu až po konečnou realizaci vám pomůžeme a to vč. zajištění květinové výzdoby. 
+        </p>    
+       </div>
+          
+   </section>
+
+
+
+
+  
+  
+  <section class="we-are-three">
+   <div>
+       <h3>Neváhejte nás kontaktovat</h3>
+  </div>
+      <div class="we-are-item-one">
+        <p>+420 723 797 339</p>
+      </div>
+    
+   
+     
+   <!--   
+      <?php
+        
+        if($_GET)['success'] == 1){
+      echo "<div class=\"form-result success\">Odeslání proběhlo v pořádku</div>";
+       };
+       if($_GET)['error'] == -1){
+      echo "<div class=\"form-result success\">Chyba. Zkuste znovu</div>";
+       };
+
+      ?>
+        --> 
+    
+          <form action="mailer.php" method="post" class="box">
+                      
+          <h1>Nezávazná poptávka</h1>
+          <input type="text" name="name" placeholder="Jméno a Příjmení">
+          <input type="email" name="email"  placeholder="Email">
+          <input type="text" name="phone" placeholder="Telefonní číslo">
+          <input type="Date" name="date" placeholder="Datum události">
+          <input type="text" name="place" placeholder="Místo konání">
+          <input type="text" name="number" placeholder="Počet osob">
+              <select name="form" id="">
+                  <option value="privatni akce">Privátní akce</option>
+                  <option value="firemni akce">Firemní akce</option>
+                  <option value="svatba">Svatba</option>
+                  <option value="jine">Jiné</option>                 
+              </select>
+              <textarea name="message" cols="30" rows="10" placeholder="Zpráva"></textarea>
+           <input type="submit" value="Odeslat">
+          </form>
+      
+    
+  </section>
+  
+</main>
+
