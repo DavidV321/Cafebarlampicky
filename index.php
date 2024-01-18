@@ -111,7 +111,7 @@ if (!str_ends_with($BASEURL, '/')) {
             </ul>
             
             <div class="mobile-nav-back"></div>
-                <a class="mobile-nav-icon jq--nav-icon"><img class="jq--image-hamburger" src="images/hamburgerMenu.png" alt=""></a>
+                <a class="mobile-nav-icon jq--nav-icon"><img class="jq--image-hamburger" src="<?php echo $BASEURL?>images/hamburgerMenu.png" alt=""></a>
          
         </nav>
       </div>

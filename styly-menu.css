@@ -4,9 +4,19 @@
     box-sizing: border-box;
 }
 
+.about-us {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.daily-title h2{
+    margin: 20px auto;
+    font-family: "GT-Pressura", Sans-serif;
+    text-align: center;
+}
 
 .menu-text {
-    margin: 40px 100px 60px 180px;
+    /* margin: 40px 100px 60px 180px; */
     font-size: 20px;
     font-family: "GT-Pressura", Sans-serif;
     

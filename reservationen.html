@@ -48,50 +48,50 @@
       
         <div class="form-main-box">
             <div class="form-segments">
-             <form action="rezervation.php" method="post" class="box">
+             <form action="process_reservation.php" method="post" class="box">
                  <p class="text1">Date...</p>
-                 <input type="date" placeholder="Datum události">
+                 <input type="date" name="event_date" placeholder="Datum události">
                  <p class="text2">Number persons</p>
-                <select name="number" id="box2">
-                 <option value="">2</option>
-                 <option value="">3</option>
-                 <option value="">4</option>
-                 <option value="">5</option>
-                 <option value="">6</option>
-                 <option value="">7</option>
-                 <option value="">8</option>
-                 <option value="">9</option>
-                 <option value="">10</option>
+                <select name="number_of_people" id="box2">
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
                 </select>
                 <p class="text3">Time</p>
-                <select name="time" id="box3">
-                 <option value="">11:00</option>
-                 <option value="">11:30</option>
-                 <option value="">12:00</option>
-                 <option value="">12:30</option>
-                 <option value="">13:00</option>
-                 <option value="">13:30</option>
-                 <option value="">14:00</option>
-                 <option value="">14:30</option>
-                 <option value="">15:00</option>
-                 <option value="">15:30</option>
-                 <option value="">16:00</option>
-                 <option value="">16:00</option>
-                 <option value="">16:30</option>
-                 <option value="">17:00</option>
-                 <option value="">17:30</option>
-                 <option value="">18:00</option>    
-                 <option value="">18:30</option>
-                 <option value="">19:00</option>
-                 <option value="">19:30</option>
-                 <option value="">20:00</option>
-                 <option value="">20:30</option>
-                 <option value="">21:00</option>
-                 <option value="">21:30</option>
-                 <option value="">22:00</option> 
-                </select>
+                <select name="event_time" id="box3">
+                    <option value="11:00">11:00</option>
+                    <option value="11:30">11:30</option>
+                    <option value="12:00">12:00</option>
+                    <option value="12:30">12:30</option>
+                    <option value="13:00">13:00</option>
+                    <option value="13:30">13:30</option>
+                    <option value="14:00">14:00</option>
+                    <option value="14:30">14:30</option>
+                    <option value="15:00">15:00</option>
+                    <option value="15:30">15:30</option>
+                    <option value="16:00">16:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="16:30">16:30</option>
+                    <option value="17:00">17:00</option>
+                    <option value="17:30">17:30</option>
+                    <option value="18:00">18:00</option>    
+                    <option value="18:30">18:30</option>
+                    <option value="19:00">19:00</option>
+                    <option value="19:30">19:30</option>
+                    <option value="20:00">20:00</option>
+                    <option value="20:30">20:30</option>
+                    <option value="21:00">21:00</option>
+                    <option value="21:30">21:30</option>
+                    <option value="22:00">22:00</option> 
+                   </select>
                  <p class="text4">Length of visit</p>
-                <select name="hour" id="box4">
+                <select name="visit_duration" id="box4">
                  <option value="one-hour">1 h</option>
                  <option value="two-hour">2 h</option>
                  <option value="three-hour">3 h</option>
@@ -99,10 +99,10 @@
                  
                 </select>
                 
-                 <input type="name" placeholder="Name">                
-                 <input type="email" placeholder="Email">
-                 <input type="phone" placeholder="Phone">
-                 <textarea name="" cols="30" rows="10">Message</textarea>
+                 <input type="name" name="full_name" placeholder="Name">                
+                 <input type="email" name="email" placeholder="Email">
+                 <input type="phone" name="phone" placeholder="Phone">
+                 <textarea name="message" placeholder="Message" cols="30" rows="10"></textarea>
                  <input type="submit" value="Reservation">
                 
              </form>            

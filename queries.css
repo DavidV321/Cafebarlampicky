@@ -92,7 +92,7 @@ nav ul li a:active {
     /*......dinner and drink.........*/
    
 
-.dinner-item {
+/* .dinner-item {
  
     width: 100%;
 }
@@ -101,7 +101,7 @@ nav ul li a:active {
         text-align: left;
         margin-left: 59px;
           
-    }
+    } */
 
     #beer-breznak-main {
         display: none;
@@ -262,9 +262,10 @@ nav ul li a:active {
   
     /*..........dinner/drink/.........*/
 
-    .dinner-text {
+    /* .dinner-text {
         margin-left: 30px;
-    }
+    } */
+
  #thema-main p {
       font-size: 13px; 
      padding-left: 40px;
