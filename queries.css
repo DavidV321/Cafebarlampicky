@@ -6,8 +6,7 @@
     .we-are-three {
         margin-top: 300px;
     }
-  
-    
+   
     
 
 
@@ -63,29 +62,16 @@
 
 }
     
-    
-/* nav ul li a:hover,
-nav ul li a:active {
-    transition: border-top 0.7s;
-    border-top: 2px solid transparent;
-    color: #91AA99;
-      
-}
-     */
-
-
-    
-   
-    
  
 @media only screen and (max-width: 1090px){
 
+  
 
     #beer-breznak-main {
         display: none;
     }
 
-    
+
     
     }
 
@@ -105,7 +91,15 @@ nav ul li a:active {
         padding-left: 80px;
     }
 
+    .menu-item,
+    .menu-price {
+        padding-left: 0;
+        margin-right: 0;
+    }
 
+    .menu-item {
+        text-align: center;
+    }
       
 }
   
@@ -202,13 +196,6 @@ nav ul li a:active {
     margin-top: 800px;
 }
 
-header {
-    background-attachment: scroll;  /* Odstraníme fixed při malých obrazovkách */
-    background-size: cover;
-    height: auto;  /* Výška se přizpůsobí obsahu */
-    
-    }
-
     }
 
        
@@ -245,11 +232,7 @@ header {
           
 @media only screen and (max-width: 700px){
   
-    /*..........dinner/drink/.........*/
-
-    /* .dinner-text {
-        margin-left: 30px;
-    } */
+    
 
  #thema-main p {
       font-size: 13px; 
