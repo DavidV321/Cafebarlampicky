@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 
-.about-us {
-    width: 1000px;
-    margin: 0 auto;
-}
+/* .about-us {
+   
+    margin: 20px auto;
+} */
 
 .daily-title h2{
     margin: 20px auto;
@@ -21,7 +21,7 @@
     font-size: 20px;
     font-family: "GT-Pressura", Sans-serif;
     margin: 0 auto;
-    
+    margin-bottom: 100px;
 }
 
 .menu-text h3 {

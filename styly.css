@@ -803,15 +803,13 @@ input[name="r"]{
 
 
 
-.lunch {
-    margin: 20px auto;
-    height: 1000px;
-}
+
 
 .lunch-text p{
     text-align: center;
     font-size: 25px;
     font-family:  "GT-Pressura", Sans-serif; 
+    margin-top: 30px;
 }
 
 .odkaz-inst2 {
