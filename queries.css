@@ -90,7 +90,7 @@
     .maps {
         padding-left: 80px;
     }
-
+     /* ......responsivita menu ......... */
     .menu-item,
     .menu-price {
         padding-left: 0;
@@ -98,9 +98,17 @@
     }
 
     .menu-item {
+        float: none;
         text-align: center;
     }
-      
+
+    .menu-item p {
+        text-align: center;
+    }
+    .menu-price {
+        margin-top: 15px; /* Posunuto o řádek dolů */
+        text-align: center;
+    }
 }
   
     

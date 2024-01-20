@@ -35,6 +35,8 @@
     float: left;
     margin-bottom: 15px;
     margin-left: 57px;
+    display: flex; /* Přidáno pro využití flexboxu */
+    align-items: center; /* Zarovnání na střed vertikálně */
 }
 
 .menu-price {
