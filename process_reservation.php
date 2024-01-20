@@ -28,7 +28,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_body .= "Zpráva:\n$message";
 
     // Odeslání e-mailu
-    mail($recipient, $subject, $email_body, $headers);
+    mb_language("uni");
+    mb_internal_encoding("UTF-8");
+
+    mb_send_mail($recipient, $subject, $email_body, $headers);
 
     // Přesměrování zpět na stránku s potvrzením
     header("Location: confirmation_page.html");

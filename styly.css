@@ -14,7 +14,10 @@
 /*.........header........*/
 
 header {
-    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("images/hlavnifoto.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("images/hlavnifoto.jpg") center center/cover no-repeat;
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;

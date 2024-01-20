@@ -4,26 +4,25 @@
     box-sizing: border-box;
 }
 
-.about-us {
-    width: 1000px;
-    margin: 0 auto;
-}
+
 
 .daily-title h2{
-    margin: 20px auto;
+    margin: 40px auto;
     font-family: "GT-Pressura", Sans-serif;
     text-align: center;
 }
 
 .menu-text {
-    /* margin: 40px 100px 60px 180px; */
+    width: 1000px;
+    margin: 0 auto;
     font-size: 20px;
     font-family: "GT-Pressura", Sans-serif;
+    
     
 }
 
 .menu-text h3 {
-    padding: 25px 0px 25px 60px;
+    padding: 25px 0px 25px 0px;
     font-family: "GT-Pressura", Sans-serif;
     
 }
@@ -41,7 +40,7 @@
     list-style-type: none;
     float: left;
     margin-bottom: 15px;
-    margin-left: 57px;
+    /* margin-left: 57px; */
 }
 
 .menu-price {
