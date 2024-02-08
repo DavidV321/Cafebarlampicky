@@ -16,6 +16,7 @@
 header {
     background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("images/hlavnifoto.jpg");
     background-size: cover;
+    background-position: center;
     height: 100vh;
     background-attachment: fixed;
     
@@ -248,6 +249,7 @@ nav a img {
   font-family: "GT-Pressura", Sans-serif;
   background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3)),url("photogalery/14.2.jpg");
     background-size: cover;
+    background-position: center;
     height: 100vh; 
 }
 
@@ -521,6 +523,7 @@ input[name="r"]{
   font-family: "GT-Pressura", Sans-serif;
   background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("images/zahradka2.jpg");
     background-size: cover;
+    background-position: center;
     height: 100vh;  
 }
 
