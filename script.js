@@ -41,6 +41,17 @@ $(".jq--scroll-header-text").click(function(){
 
     
 
+ // Získání aktuálního data
+ var currentDate = new Date();
+
+ // Přidání jednoho dne k aktuálnímu datu
+ currentDate.setDate(currentDate.getDate() + 1);
+
+ // Formátování data do správného formátu pro vstupní pole typu date (YYYY-MM-DD)
+ var minDate = currentDate.toISOString().split('T')[0];
+
+ // Nastavení minimálního data pro vstupní pole
+ document.getElementById('event_date').setAttribute('min', minDate);
      
      
      
